@@ -3,8 +3,9 @@ const year = new Date().getFullYear();
 
 export default defineConfig({
   title: "FruchtPlaner",
-  description: "Dokumentation des Bots",
-  ignoreDeadLinks: true, // Cloudflare fix to build page
+  description: "Dokumentation",
+  cleanUrls: true, // Entfernt .html von URLs
+  ignoreDeadLinks: true, // Cloudflare fix to build page // prüft normale auf Links, die nicht anklickbar / erreichbar sind. Hier aber zu Problemen geführt, wahrscheinlich wegen files mit Umlauten oder Unterstrichen
   //head: [["link", { rel: "icon", type: "image/png", href: "/FL_Logo.png" }]],
   head: [
     ["link", { rel: "icon", type: "image/png", href: "/FL_Logo.png" }],
