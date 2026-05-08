@@ -30,7 +30,7 @@ export default defineConfig({
       { text: "Home", link: "/" },
       {
         text: "Guide",
-        link: "/allgemein/befehlsübersicht",
+        link: "/allgemein/befehlsuebersicht",
         activeMatch:
           "/allgemein/|/private_reminders/|/team_termine/|/zeitangaben_wiederholungen/", // Regex (wenn die aktuelle URL darauf matcht, wird der Nav-Link blau)
       },
@@ -63,7 +63,7 @@ export default defineConfig({
         items: [
           {
             text: "Befehlsübersicht",
-            link: "/allgemein/befehlsübersicht",
+            link: "/allgemein/befehlsuebersicht",
           },
           {
             text: "Zeitangaben & Wiederholungen",

@@ -20,7 +20,7 @@ Bei Auswahl eines Termins im Auswahlfeld:
 
 ::: warning Wichtige Information
 Den `/termin`-Befehl kannst du ausführen, wenn du selbst als Staff-User oder eine Rolle, die du besitzt, als Staff-Rolle hinzugefügt wurde.
-<br>Dies heißt aber nicht, dass man zwingend diese Staff-Berechtigung braucht, um den Befehl auszuführen. Siehe auch: [Berechtigungshierarchie des Bots](/allgemein/befehlsübersicht#berechtigungshierarchie)
+<br>Dies heißt aber nicht, dass man zwingend diese Staff-Berechtigung braucht, um den Befehl auszuführen. Siehe auch: [Berechtigungshierarchie des Bots](/allgemein/befehlsuebersicht#berechtigungshierarchie)
 
 Die folgenden Funktionen benötigen jedoch **extra Berechtigungen**:
 - Termin verlegen

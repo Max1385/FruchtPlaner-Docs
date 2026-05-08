@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Anschauen
-      link: /allgemein/befehlsübersicht
+      link: /allgemein/befehlsuebersicht
 
 features:
   -  title: Termine
