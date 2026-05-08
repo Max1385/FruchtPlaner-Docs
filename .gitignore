@@ -6,6 +6,7 @@ dist
 dist-ssr
 docs/.vitepress/dist
 docs/.vitepress/cache
+docs/.vitepress/.temp
 
 # Logs
 logs
