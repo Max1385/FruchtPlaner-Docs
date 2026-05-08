@@ -4,6 +4,7 @@ const year = new Date().getFullYear();
 export default defineConfig({
   title: "FruchtPlaner",
   description: "Dokumentation des Bots",
+  ignoreDeadLinks: true, // Cloudflare fix to build page
   //head: [["link", { rel: "icon", type: "image/png", href: "/FL_Logo.png" }]],
   head: [
     ["link", { rel: "icon", type: "image/png", href: "/FL_Logo.png" }],

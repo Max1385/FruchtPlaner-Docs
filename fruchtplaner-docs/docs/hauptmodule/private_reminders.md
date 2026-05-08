@@ -23,7 +23,7 @@ Bei erstmaliger Nutzung des Befehls wird dir automatisch ein eigener Thread-Kana
 :::
 
 ## Neuen Reminder erstellen
-1. Fühhre den Befehl **`/reminder`** aus, mit welchem du das Menü öffnest. Danach klicke auf den Button **"Erstellen"**.
+1. Führe den Befehl **`/reminder`** aus, mit welchem du das Menü öffnest. Danach klicke auf den Button **"Erstellen"**.
 2. Es öffnet sich ein Eingabefeld, in welchem du den **Titel** deines Reminders sowie den **Zeitpunkt** (wann) angeben musst. Falls du eine RRULE verwenden möchtest, lasse dieses Feld einfach **leer** - du wirst im nächsten Schritt dann aufgefordert, eine RRULE einzutragen.
 3. Nun kannst du noch optional eine Wiederholung einrichten. Unter der Nachricht gibt es folgende Aktionen:
     - **Ohne Wiederholung**: Reminder ist dementsprechend nur einmalig und wird nicht noch einmal wiederholt.
