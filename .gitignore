@@ -7,6 +7,9 @@ dist-ssr
 **/.vitepress/cache
 **/.vitepress/.temp
 **/.vitepress/dist
+.vitepress/cache
+.vitepress/.temp
+.vitepress/dist
 
 # Logs
 logs
