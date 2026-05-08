@@ -1,0 +1,68 @@
+:root {
+  --vp-font-family-base: 'Work Sans', sans-serif;
+  --vp-font-family-mono: 'Fira Code', 'Fira Mono', monospace;
+}
+
+/* Alle Überschriften --> Quantico + uppercase */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4 {
+  font-family: 'Quantico', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Navbar-Titel auch */
+.VPNavBarTitle .title {
+  font-family: 'Quantico', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Hero-Bereich etwas mehr Padding */
+.VPHero {
+  padding-bottom: 48px !important;
+}
+
+/* Feature Cards Hover */
+.VPFeature {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.VPFeature:hover {
+  transform: translateY(-4px);
+  border-color: var(--vp-c-brand-2) !important;
+  box-shadow: 0 0 32px rgba(99, 90, 220, 0.15);
+}
+
+/* Loslegen Button größer */
+.VPHero .VPButton.medium {
+  padding: 20px 64px !important;
+  font-size: 16px !important;
+  border-radius: 10px !important;
+}
+
+/* Grid-Hintergrund auf der Home-Seite */
+.VPHome {
+  background-image:
+    linear-gradient(rgba(99,90,220,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99,90,220,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+
+/* Loslegen Button Hover */
+.VPHero .VPButton.brand {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.25s ease,
+              background-color 0.2s ease;
+}
+.VPHero .VPButton.brand:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(99, 90, 220, 0.4);
+}
+
+/* Mehr Abstand unten nach den Feature Cards */
+.VPFeatures {
+  padding-bottom: 80px !important;
+}
