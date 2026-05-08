@@ -4,9 +4,9 @@ node_modules/
 # Build output
 dist
 dist-ssr
-docs/.vitepress/dist
-docs/.vitepress/cache
-docs/.vitepress/.temp
+**/.vitepress/cache
+**/.vitepress/.temp
+**/.vitepress/dist
 
 # Logs
 logs
