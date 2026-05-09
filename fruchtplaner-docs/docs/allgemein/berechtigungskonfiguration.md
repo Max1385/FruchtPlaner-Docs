@@ -21,7 +21,7 @@
 | Mention Everyone (Everyone erwähnen)   | Nur dann, wenn der Bot Rollen pingen soll, die nicht als mentionable markiert sind     |
 
 ::: info Wenn der Bot keine Berechtigungen hat
-Wenn der Bot keine Berechtigungen hat, eine Benachrichtigung eines Team-Termins in den vom User selbst ausgewählten Kanal zu senden, **versucht** der Bot es **solange erneut**, **bis** die **Berechtigungen** ihm **gewährt** werden.
+Wenn der Bot eine Benachrichtigung **nicht** zustellen kann, wird der Versuch beim nächsten Zyklus *(alle 30 Sekunden)* wiederholt. Nach **5** fehlgeschlagenen Versuchen wird der Eintrag automatisch deaktiviert – der Ersteller erhält dann darüber eine DM mit dem Grund (z.B. `403 Forbidden – Missing Permissions`). Falls DMs deaktiviert sind, erscheint die Meldung stattdessen im konfigurierten Log-Kanal.
 :::
 
 ## Zusätzlich erlaubt

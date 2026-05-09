@@ -29,7 +29,7 @@ export default defineConfig({
 
   themeConfig: {
     outline: {
-      level: [2, 3] // Auch ###-Überschriften erscheinen in der "On this page"-Sidebar
+      level: [2, 3], // Auch ###-Überschriften erscheinen in der "On this page"-Sidebar
     },
     nav: [
       { text: "Home", link: "/" },

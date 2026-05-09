@@ -8,14 +8,17 @@
 
 ## Exakte Zeitangaben
 `15.05.2026 14:30` – Datum & Uhrzeit
-<br>`morgen 10:00` - heute 15:30
+<br> `heute 20:00` - heute um 20 Uhr
+<br> `20:00` - heute um 20 Uhr (falls noch möglich (s.u.))
+<br>`morgen 10:00` - morgen um 10 Uhr
 <br>`fr 15` - Freitag um 15 Uhr
 <br>`mo 22` - Montag um 22 Uhr
 
 ::: info Information
 Beispiel:
-<br>Es ist Dienstag, der 05.05.2026 um 19:00 Uhr und du möchtest einen neuen Termin erstellen und schreibst: `di 18`
-<br>--> Der Bot erkennt automatisch, dass dies technisch nicht mehr möglich ist und legt den Termin mit derselben Uhrzeit auf nächsten Dienstag.
+<br>Es ist Dienstag, der **05.05.2026 um 19:00 Uhr** und du möchtest einen neuen Termin erstellen und schreibst: `di 18`
+<br>--> Der Bot erkennt automatisch, dass dies technisch **nicht** mehr möglich ist und legt den Termin mit derselben Uhrzeit auf **nächsten Dienstag**.
+<br>Würdest du jedoch `heute 18:00` oder `18:00` schreiben, erkennt dieser auch, dass die Uhrzeit vor dem Erstellen liegt und verschiebt den Termin dann zur selben Uhrzeit auf den **nächsten Tag**.
 :::
 
 ## Wiederholungen – Einfach
