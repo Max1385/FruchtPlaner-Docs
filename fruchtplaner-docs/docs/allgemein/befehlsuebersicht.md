@@ -36,7 +36,7 @@
 | 1 | <Badge type="danger" text="Server-Admin" /> | Discord-Administrator-Berechtigung auf dem Server |
 | 2 | <Badge type="warning" text="Bot-Admin" /> | Manuell vom Server-Admin im Bot eingetragen (User oder Rolle) |
 | 3 | <Badge type="tip" text="Staff" /> | Hat eine eingetragene Staff-Rolle auf dem Server |
-| — | <Badge type="info" text="Jeder" /> | Kein Login / keine Rolle erforderlich |
+| — | <Badge type="info" text="Jeder" /> | / |
 :::
 
 :::info Kurze Auflistung aller Background-Checks
