@@ -2,9 +2,9 @@
 
 ## Übersicht
 
-- Geordnet nach Alphabet
+(alphabetisch geordnet)
 
-| Befehl                      | Beschreibung                                                             | Berechtigung, die man mindestens haben muss |
+| Befehl                      | Beschreibung                                                             | Benötigte Berechtigung zum Ausführen |
 | --------------------------- | ------------------------------------------------------------------------ | ------------------------------------------- |
 | `/admin add`                | Füge einen Bot-Admin (User oder Rolle) hinzu.                            | <Badge type="danger" text="Server-Admin" /> |
 | `/admin remove`             | Entferne einen Bot-Admin (User oder Rolle).                              | <Badge type="danger" text="Server-Admin" /> |
@@ -39,7 +39,7 @@
 | — | <Badge type="info" text="Jeder" /> | Kein Login / keine Rolle erforderlich |
 :::
 
-:::info Befehlsbasierte, spezielle Abfragen
+:::info Kurze Auflistung aller Background-Checks
 Es kann sein, dass du zwar die Staff-Berechtigung hast, aber trotzdem bspw. beim `/termin`-Befehl nicht alle Optionen für dich verfügbar sind.
 <br>Das liegt daran, dass der Bot neben den normalen Abfragen, ob ein User einen bestimmten Befehl ausführen darf, ebenso prüft, ob ein User nun auch die Funktion xy im Termin-Verwaltungsmenü benutzen kann.
 <br>Es existieren bspw. Checks / Überprüfungen wie u.a.:

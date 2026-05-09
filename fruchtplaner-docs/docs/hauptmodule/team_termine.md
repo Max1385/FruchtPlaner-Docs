@@ -39,13 +39,13 @@ Benötigt: Sei der Ersteller des Termins, ein Bot-Admin oder ein Administrator d
     - Zeitpunkt (Pflichtangabe, aber **leer lassen falls** du eine **RRULE** verwenden möchtest)
     - Beschreibung des Termins (optionale Angabe)
 
-    Du findest bereits "Platzhalter"-Werte in den einzelnen Eingabefeldern, an welchen du dich orientieren kannst. Falls du nicht genau weißt, welche Zeitpunkt-Werte man alles bei "Zeitpunkt" eintragen kann, empfehlen wir dir HIER nachzuschauen (mit Beispielen! :D).
+    Du findest bereits "Platzhalter"-Werte in den einzelnen Eingabefeldern, an welchen du dich orientieren kannst. Falls du nicht genau weißt, welche Zeitpunkt-Werte man alles bei "Zeitpunkt" eintragen kann, empfehlen wir dir [HIER](/allgemein/zeitangaben_wiederholungen) nachzuschauen (mit Beispielen!).
 
 2. Danach siehst du ein Embed, welches den Titel **Sichtbarkeit, Kategorie & Pings** trägt.
 <br>In diesem siehst du deine vorhin eingegebenen Werte und kannst sie noch einmal überprüfen.<br>Jetzt aber ist der Punkt gekommen, an welchem du die **Sichtbarkeit des Termins (Pflichtangabe)** sowie eine **Kategorie** und optional auch **Rollen/User zum Pingen** einstellen kannst.
-    - **Sichtbarkeit auswählen:** Öffentlich (standardmäßige Auswahl; Im Kalender und in der Terminübersicht sichtbar) vs. Versteckt (Nur in der internen `/termin`-Liste sichtbar)
-    - **Kategorie auswählen:** Es wird unbedingt empfohlen, eine Kategorie auszuwählen. Dieses System nutzen wir, damit die Termine jeweils unterschiedlich dargestellt werden (andere Farbegebung [Hintergrund/Schriftfarbe]) und nur in den Kalendern auftreten, auf welchem sie auch relevant sind.
-    - **Rollen oder User auswählen, die gepingt werden sollen:** Optionale Angabe
+    - **Sichtbarkeit auswählen (Pflichtangabe):** Öffentlich (standardmäßige Auswahl; Im Kalender und in der Terminübersicht sichtbar) vs. Versteckt (Nur in der internen `/termin`-Liste sichtbar)
+    - **Kategorie auswählen (empfohlen, optional):** Es wird unbedingt empfohlen, eine Kategorie auszuwählen. Dieses System nutzen wir, damit die Termine jeweils unterschiedlich dargestellt werden (andere Farbegebung [Hintergrund/Schriftfarbe]) und nur in den Kalendern auftreten, auf welchem sie auch relevant sind.
+    - **Rollen oder User auswählen, die gepingt werden sollen (optional)**
 
 3. Drücke auf "Weiter". Nun siehst du ein weiteres Embed mit dem Titel **Ziel-Kanal für Benachrichtigung** und noch einmal alle Angaben, die du bisher eingestellt hast.<br>
     Du kannst einen Ziel-Kanal für die Benachrichtigung einstellen, die standardmäßig zu Beginn eines Termins kommt. Wenn du keinen bestimmten Kanal auswählst, erscheint die Benachrichtigung in dem Kanal, in welchem du den Termin erstellt hast, ansonsten natürlich in deinem ausgewählten Kanal.

@@ -31,11 +31,11 @@ Button `Mit Wiederholung (rrule)` oder `RRULE` für komplexe Zeitregeln. Diese w
 
 **Grundlegender Aufbau**: `RRULE:FREQ=...;OPTION=...`
 <br>**Beispielhafte Parameter, welche du verwenden kannst**:
-- `FREQ` – `DAILY` - `WEEKLY` - `MONTHLY` - `YEARLY`
+- `FREQ` – `DAILY` `WEEKLY` `MONTHLY` `YEARLY`
+- `INTERVAL` – z. B. `2` für alle 2 Wochen/Monate/Jahre etc. (Abstand zwischen den Wiederholungen - abhängig von `FREQ`)
 - `BYDAY` – `MO` `TU` `WE` `TH` `FR` `SA` `SU`
-- `BYMONTHDAY` – Tag im Monat: `1`, `15`, `9`,`11`,`13`
-- `INTERVAL=2` – z. B. alle 2 Wochen
-- `BYSETPOS=-1` – letztes Vorkommen im Zeitraum
+- `BYMONTHDAY` – Tag im Monat: `1`, `15`, `28` – oder negativ: `-1` (letzter Tag), `-5` (fünftletzter Tag)
+- `BYSETPOS` – z. B. `1` (erstes Vorkommen) oder `-1` (letztes Vorkommen) im Zeitraum
 
 **RRULE Beispiele**:
 - Ein Termin, der jeden Mo/Mi/Fr um 18 Uhr wiederholt werden soll:
@@ -50,8 +50,12 @@ RRULE:FREQ=MONTHLY;BYDAY=-1MO
 ```
 RRULE:FREQ=MONTHLY;BYDAY=SU;BYMONTHDAY=12,13,14,15,16,17,18;BYSETPOS=1
 ```
+- Alle 2 Wochen montags um 9 Uhr:
+```
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;BYHOUR=9;BYMINUTE=0
+```
 
 ::: tip Tipp
-Mit /reminder --> `RRULE testen` (Button im Menü klicken) kannst du dir eine Vorschau anzeigen lassen, was diese Wiederholungsregel / RRULE bewirken würde.
+Mit `/reminder` --> `RRULE testen` (Button im Menü klicken) kannst du dir eine Vorschau anzeigen lassen, was diese Wiederholungsregel / RRULE bewirken würde.
 <br>Für eine noch detailliertere Übersicht über die Funktionsweise von RRULEs: z.B. [RFC 5545 Dokumentation.](https://icalendar.org/iCalendar-RFC-5545/3-8-5-3-recurrence-rule.html)
 :::

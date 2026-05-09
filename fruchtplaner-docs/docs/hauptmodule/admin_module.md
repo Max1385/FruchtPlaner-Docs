@@ -18,24 +18,30 @@ Verwende den Befehl `/kalender_setup`. Folgendes musst du angeben:
 
 Im Bot selbst existieren Kateogorien, welche dazu verwendet werden, viele Termine ordnungsgerecht zu kategorisieren. Jede Kategorie hat einen anderen Namen sowie einen anderen Farb-/Hexcode, um Termine aus unterschiedlichen Kategorien mit der eingestellten Farbe im Kalender anzuzeigen.
 
-### Kategorie erstellen
+### Erstellen
 
-Verwende `/kategorie erstellen`, um eine neue Kategorie zu erstellen. Pflichtangaben sind:
+Verwende `/kategorie erstellen`, um eine neue Kategorie zu erstellen.
+<br>Pflichtangabe:
 
 - **Name der Kategorie**
-- **Farbe** (_optionale_ Hex-Farbe für den Kalender (z.B. #FF0000))
+
+Optionale Angabe:
+
+- **Farbe** (Hex-Farbe für den Kalender, z.B. #FF0000)
 
 
-### Kategorie bearbeiten
+### Bearbeiten
 Verwende `/kategorie bearbeiten`, um eine Kategorie zu bearbeiten.
 
 
-### Kategorie löschen
-Verwende `/kategorie löschen`, um eine Kategorie zu bearbeiten. Pflichtangabe direkt im Slash-Command selbst ist hier:
+### Löschen
+Verwende `/kategorie löschen`, um eine Kategorie zu löschen. Pflichtangabe direkt im Slash-Command selbst ist hier:
 
 - ID der Kategorie (diese erhältst du aus [`/server-config`](#vollstandige-bot-konfigurationsubersicht-anzeigen-lassen))
 
-## Reminder-Thread Kanal hinzufügen
+## Reminder-Thread Kanal
+
+### Hinzufügen
 Um den Reminder-Thread Kanal auf einem Server einzurichten, kannst du den Befehl `/reminder_setup kanal` ausführen.
 <br>In den ausgewählten Kanal wird dann das Setup-Embed geschickt, mit welchem User beim Klicken auf den Button **"Wo ist mein Thread?"** oder bei nächster manueller Ausführung des Befehls `/reminder`, einen **persönlichen Thread** erstellt bekommen, in welchem sie dann neue Reminder erstellen können.
 
@@ -44,17 +50,21 @@ Um den Reminder-Thread Kanal auf einem Server einzurichten, kannst du den Befehl
 - Wenn du nicht möchtest, dass auch Server-Admins deinen Thread sehen können, kannst du stattdessen einfach einen **Reminder per DM erstellen** (schreibe dazu den Bot und führe den oben genannten Befehl aus) --> Du erhältst dann deine Benachrichtigungen **in deinen DMs** (standardmäßig: im Thread-Kanal, falls Ausführung des Befehls im eigenen Thread-Kanal).
   :::
 
-## Reminder-Thread Kanal entfernen
+### Entfernen
 Verwende `/reminder_setup entfernen`, um das Setup vom Server zu entfernen.
 
-## Staff-Rolle hinzufügen
+## Staff-Rolle
+
+### Hinzufügen
 Verwende `/staff_role add`, um eine Staff-Rolle hinzuzufügen.
 
-## Staff-Rolle entfernen
+### Entfernen
 Verwende `/staff_role remove`, um einer Rolle den Staff-Status wieder zu entfernen.
 
-## Log-Kanal für Termine einrichten
-Verwende dazu: `/log_channel setup` und wähle einen Kanal aus.
+## Log-Kanal
+
+### Einrichten
+Um einen Log-Kanal für Termine einzurichten, verwende: `/log_channel setup` und wähle einen Kanal aus.
 <br>In diesem Kanal werden dann alle Termine geloggt, die vom Bot gesendet wurden. Zu Beginn jedes neuen Monats, sendet der Bot als Information oder "Trennlinie" den aktuellen Monat und das dazugehörige Jahr in den Kanal hinein und pinnt diese Nachricht im Kanal selbst an.
 
 ::: danger Achtung!
@@ -62,21 +72,21 @@ Es kann im Bot selbst (global) nur **EINEN** Log-Kanal geben.
 <br>Dieser sollte idealerweise also einfach auf dem **Staff-/Team-Server** belassen werden.
   :::
 
-## Log-Kanal für Termine entfernen
+### Entfernen
 Verwende dazu: `/log_channel entfernen` und wähle den Kanal aus.
 
-## Vollständige Bot-Konfigurationsübersicht anzeigen lassen
+## Bot-Konfigurationsübersicht
 Verwende den Befehl `/server_config`, um dir die **komplette serverseitige** ***und*** **globale Konfiguration** des Bots anzuschauen.
 
 ## Statistiken anschauen
 Nutze den Befehl `/statistiken`, um dir Statistiken über **Netzwerk, Bot, Server, Modul und Versionen** anzeigen zu lassen.
 
-## Ein (Beschreibungs-)Template erstellen
+## Ein Template erstellen
 #### Zuerst: Wozu sind diese gut und wie funktionieren sie?
-Du kannst Templates erstellen, welche - falls du sie per Auswahl auf einen Termin anwedest (s.u.) - die Beschreibung eines Termins mit dem Template-Inhalt komplett überschreiben.
-<br>Der Haupt-Grund, wieso es dieses Feature gibt, ist Folgender: Wenn du bspw. einen Termin namens "CWL Anmeldung" hast, welcher am 20.05.2026 stattfindet, aber eine Anmeldung in einem Ticket oder bei einem anderem Discord-Bot erfordert, kannst du durch Erstellen eines anderen Termins, welcher z.B. den Namen "Einsendeschluss CWL Anmeldung" trägt, Variablen des neu erstellten Termins in diesem Template verwenden.
+Du kannst Templates erstellen, welche - falls du sie per Auswahl auf einen Termin anwedest (s.u.) - die **Beschreibung eines Termins mit dem Template-Inhalt komplett überschreiben**.
+<br>Templates können verwendet werden, um Ankündigungen schöner zu formatieren und Zeiten anderer Termine durch Variablen in der Nachricht zu integrieren.
 
-Konkretes Beispiel:
+**Konkretes Beispiel:**
 - Termin "CWL Anmeldung" existiert am 20.05.2026
 - Termin "Einsendeschluss CWL Anmeldung" existiert, welcher den Zeitpunkt 15.05.2026 (fünf Tage vorher) bekommt
 - Eine separate Erinnerung für den Termin "CWL Anmeldung", welche schon VORHER stattfindet, wird bereits am 10.05.2026 in einen Discord-Kanal geschickt
@@ -87,7 +97,7 @@ Eine beispielhafte Nachricht für das Template wäre z.B. *(alles natürlich kom
 Hallo liebe Mitglieder der FruchtLabor-Familie,
 
 mit dieser automatisch gesendeten Nachricht wird an das kommende Event "CWL Anmeldung" Ende des Monats erinnert.
-Einsendeschluss: `{date_55}` (`{relative_55}`)
+Einsendeschluss: {date_55} ({relative_55})
 
 Mit freundlichen Grüßen,
 das Server-Team
@@ -123,10 +133,3 @@ Zum Verwenden: Im Template-Text (bei der Erstellung einfügen):
 Termin-ID gilt hier als ein Standardwert, welcher unbedingt angegeben werden muss. Sonst weiß der Bot nicht, auf welchen Termin er sich beziehen soll. Die ID eines Termins bekommst du unter anderem durch den Befehl `/termin` --> Liste.
 
 bspw.: `{date_268}` --> Datum des Termins mit der ID 268.
-
-## Template-Befehle
-| Befehl    | Beschreibung |
-|---------|--------|
-| /template erstellen     | Neues Beschreibungs-Template erstellen     |
-| /template liste     | Alle Templates anzeigen – Details & Zuweisungen, Bearbeiten und Löschen     |
-| /template zuweisen     | Template einem Termin oder Reminder zuweisen     |

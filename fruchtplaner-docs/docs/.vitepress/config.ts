@@ -28,6 +28,9 @@ export default defineConfig({
   //},
 
   themeConfig: {
+    outline: {
+      level: [2, 3] // Auch ###-Überschriften erscheinen in der "On this page"-Sidebar
+    },
     nav: [
       { text: "Home", link: "/" },
       {
@@ -49,7 +52,7 @@ export default defineConfig({
     //},
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/repooooooo" },
+      { icon: "github", link: "https://github.com/Max1385/FruchtPlaner-Docs" },
       { icon: "discord", link: "https://discord.gg/fruchtlabor" },
     ],
 
