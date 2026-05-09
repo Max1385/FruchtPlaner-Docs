@@ -4,7 +4,7 @@
 
 (alphabetisch geordnet)
 
-| Befehl                      | Beschreibung                                                             | Benötigte Berechtigung zum Ausführen |
+| Befehl                      | Beschreibung                                                             | Benötigte Berechtigung zum Ausführen        |
 | --------------------------- | ------------------------------------------------------------------------ | ------------------------------------------- |
 | `/admin add`                | Füge einen Bot-Admin (User oder Rolle) hinzu.                            | <Badge type="danger" text="Server-Admin" /> |
 | `/admin remove`             | Entferne einen Bot-Admin (User oder Rolle).                              | <Badge type="danger" text="Server-Admin" /> |
