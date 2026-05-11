@@ -15,7 +15,7 @@ Bei Auswahl eines Termins im Auswahlfeld:
 - Termin verlegen (Ersteller, Bot-Admin, Administrator)
 - Name, Beschreibung, RRULE-Wiederholung, Sichtbarkeit bearbeiten
 - Kategorie des Termins bearbeiten
-- Ziel-Kanal der Termin-Benachrichtigung ändern
+- Ziel-Kanal (oder Thread) der Termin-Benachrichtigung ändern
 - Termin löschen
 
 ::: warning Wichtige Information
@@ -26,7 +26,7 @@ Die folgenden Funktionen benötigen jedoch **extra Berechtigungen**:
 - Termin verlegen
 - Name, Beschreibung, RRULE-Wiederholung, Sichtbarkeit bearbeiten
 - Kategorie des Termins bearbeiten
-- Ziel-Kanal der Termin-Benachrichtigung ändern
+- Ziel-Kanal (oder Thread) der Termin-Benachrichtigung ändern
 - Termin löschen
 
 Benötigt: Sei der Ersteller des Termins, ein Bot-Admin oder ein Administrator des Servers, auf welchem der Befehl ausgeführt wird.

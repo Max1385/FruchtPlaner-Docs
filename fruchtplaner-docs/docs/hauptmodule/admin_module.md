@@ -69,11 +69,11 @@ Verwende `/staff_role remove`, um einer Rolle den Staff-Status wieder zu entfern
 ### Einrichten
 
 Um einen Log-Kanal für Termine einzurichten, verwende: `/log_channel setup` und wähle einen Kanal aus.
-<br>In diesem Kanal werden dann alle Termine geloggt, die vom Bot gesendet wurden. Zu Beginn jedes neuen Monats, sendet der Bot als Information oder "Trennlinie" den aktuellen Monat und das dazugehörige Jahr in den Kanal hinein und pinnt diese Nachricht im Kanal selbst an.
+<br>In diesem Kanal werden dann **alle Termine geloggt, die vom Bot gesendet wurden**. Zu Beginn jedes neuen Monats, sendet der Bot als Information oder "Trennlinie" den aktuellen Monat und das dazugehörige Jahr in den Kanal hinein und pinnt diese Nachricht im Kanal selbst an.
 
-::: danger Achtung!
-Es kann im Bot selbst (global) nur **EINEN** Log-Kanal geben.
-<br>Dieser sollte idealerweise also einfach auf dem **Staff-/Team-Server** belassen werden.
+::: info Information
+- Du kannst den Log-Kanal aktualisieren, indem du den Befehl `/log_channel setup` einfach nochmal ausführst und dann einen neuen Kanal angibst.
+- Pro Server kann es jeweils nur **einen** Log-Kanal geben.
 :::
 
 ### Entfernen
