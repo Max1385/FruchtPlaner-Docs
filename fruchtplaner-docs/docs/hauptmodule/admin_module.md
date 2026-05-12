@@ -165,6 +165,11 @@ Du kannst bestimmte Kategorien **automatisch** in einen Google-Kalender synchron
     <img src="/Google_Sync_Public_URL.png" width="100%">
     - `kategorie`: Kategorie, die in deinen Kalender gesynced werden soll.
 
+::: danger Achtung
+Versuche bei deinen Events, falls diese Wiederholungen haben, bitte auf **RRULEs** zu setzen. Diese sind und waren beim Testen deutlich stabiler, was das Einpflegen der Termine in den Kalender angeht.
+<br>Einfache Wiederholungen können unpräzise sein.
+:::
+
 ### Google-Synchronisierung beenden
 - Führe dazu `/gsync beenden` aus, um den Sync zu stoppen. Dir werden **alle deine** erstellen Sync angezeigt. Du kannst optional auch alle Termine löschen, die der Bot in deinen Kalender hinzugefügt hat.
 
