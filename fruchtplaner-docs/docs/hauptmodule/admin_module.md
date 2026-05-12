@@ -147,3 +147,28 @@ Zum Verwenden: Im Template-Text (bei der Erstellung einfügen):
 Termin-ID gilt hier als ein Standardwert, welcher unbedingt angegeben werden muss. Sonst weiß der Bot nicht, auf welchen Termin er sich beziehen soll. Die ID eines Termins bekommst du unter anderem durch den Befehl `/termin` --> Liste.
 
 bspw.: `{date_268}` --> Datum des Termins mit der ID 268.
+
+
+## Google-Kalender Integration
+Du kannst bestimmte Kategorien **automatisch** in einen Google-Kalender synchronsieren.
+
+### Google-Synchronisierung starten
+1. Gehe auf [calendar.google.com](https://calendar.google.com/calendar).
+2. Klicke auf einen Kalender und öffne die Einstellungen deines Kalenders, in welchen du die Termine einer Kategorie synchronisieren möchtest.
+<img src="/Google_Sync_Settings.png" width="55%">
+3. Gehe zu "Geteilt mit" und füge eine Person zum Teilen hinzu.
+<br>E-Mail: `fruchtplaner@fruchtplaner.iam.gserviceaccount.com`
+<br>Berechtigung: `Änderungen an Terminen vornehmen`
+4. Gehe wieder auf Discord.
+5. Führe `/gsync starten` aus.
+    - In das Feld `kalender` musst du die **Public URL** deines Kalenders eingeben. Navigiere dazu in dein Kalender Einstellungen zu "Kalender integrieren" und kopiere dir die Public URL zu deinem Kalender.
+    <img src="/Google_Sync_Public_URL.png" width="100%">
+    - `kategorie`: Kategorie, die in deinen Kalender gesynced werden soll.
+
+### Google-Synchronisierung beenden
+- Führe dazu `/gsync beenden` aus, um den Sync zu stoppen. Dir werden **alle deine** erstellen Sync angezeigt. Du kannst optional auch alle Termine löschen, die der Bot in deinen Kalender hinzugefügt hat.
+
+- `/gsync admin-beenden` - Damit kannst du einen beliebigen Google-Kalender-Sync eines Users bot-weit beenden.
+
+### Manuell synchronisieren
+Falls du das Gefühl hast, das der Bot verzögert ist oder es dauert, bis der nächste automatische Sync wieder startet, kannst du auch stattdessen kurz einmal `/gsync jetzt` verwenden.

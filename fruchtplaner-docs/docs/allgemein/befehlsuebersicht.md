@@ -8,6 +8,10 @@
 | --------------------------- | ------------------------------------------------------------------------ | ------------------------------------------- |
 | `/admin add`                | Füge einen Bot-Admin (User oder Rolle) hinzu.                            | <Badge type="danger" text="Server-Admin" /> |
 | `/admin remove`             | Entferne einen Bot-Admin (User oder Rolle).                              | <Badge type="danger" text="Server-Admin" /> |
+| `/gsync admin-beenden`             | Beendet einen beliebigen Google-Kalender-Sync (eines Users) bot-weit. | <Badge type="danger" text="Server-Admin" /><Badge type="warning" text="Bot-Admin" />|
+| `/gsync beenden`             | Beendet einen deiner Google-Kalender-Syncs.                              | <Badge type="danger" text="Server-Admin" /><Badge type="warning" text="Bot-Admin" /> |
+| `/gsync jetzt`             | Führt den Google-Sync manuell aus.                              | <Badge type="danger" text="Server-Admin" /><Badge type="warning" text="Bot-Admin" /> |
+| `/gsync starten`             | Synchronisiert eine Kategorie in einen Google-Kalender.                              | <Badge type="danger" text="Server-Admin" /><Badge type="warning" text="Bot-Admin" /> |
 | `/hilfe`                    | Gibt einen Link zum Bot-Guide zurück.                                    | <Badge type="info" text="Jeder" />          |
 | `/kalender_setup`           | Richte einen Kalender für diesen Server ein oder aktualisiere ihn.       | <Badge type="danger" text="Server-Admin" /> |
 | `/kategorie bearbeiten`     | Bearbeite Name und/oder Farbe einer Kategorie.                           | <Badge type="danger" text="Server-Admin" /> |

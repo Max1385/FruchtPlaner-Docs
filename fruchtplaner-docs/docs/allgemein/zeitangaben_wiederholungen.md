@@ -41,6 +41,18 @@ Button `Mit Wiederholung (rrule)` oder `RRULE` für komplexe Zeitregeln. Diese w
 - `BYSETPOS` – z. B. `1` (erstes Vorkommen) oder `-1` (letztes Vorkommen) im Zeitraum
 
 **RRULE Beispiele**:
+- Täglicher Reminder um 08:00 Uhr:
+```
+RRULE:FREQ=DAILY;BYHOUR=8;BYMINUTE=0
+```
+- Reminder alle 4 Stunden:
+```
+RRULE:FREQ=HOURLY;INTERVAL=4
+```
+- Reminder alle 2 Tage:
+```
+RRULE:FREQ=DAILY;INTERVAL=2
+```
 - Ein Termin, der jeden Mo/Mi/Fr um 18 Uhr wiederholt werden soll:
 ```
 RRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR;BYHOUR=18;BYMINUTE=0
