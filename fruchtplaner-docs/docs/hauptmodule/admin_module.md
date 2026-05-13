@@ -176,4 +176,4 @@ Versuche bei deinen Events, falls diese Wiederholungen haben, bitte auf **RRULEs
 - `/gsync admin-beenden` - Damit kannst du einen beliebigen Google-Kalender-Sync eines Users bot-weit beenden.
 
 ### Manuell synchronisieren
-Falls du das Gefühl hast, das der Bot verzögert ist oder es dauert, bis der nächste automatische Sync wieder startet, kannst du auch stattdessen kurz einmal `/gsync jetzt` verwenden.
+Falls du das Gefühl hast, dass der Bot verzögert ist oder es dauert, bis der nächste automatische Sync wieder startet, kannst du auch stattdessen kurz einmal `/gsync jetzt` verwenden.
